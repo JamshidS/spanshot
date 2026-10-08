@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: spring-demo
+  datasource:
+    url: jdbc:h2:mem:demo;DB_CLOSE_DELAY=-1
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    # Run data.sql after Hibernate has created the schema.
+    defer-datasource-initialization: true
